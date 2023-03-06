@@ -1,0 +1,125 @@
+body {
+    background-color: honeydew;
+}
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    background-color: darkslategray;
+    color: white;
+    font-size: xx-large;
+}
+footer {
+    background-color: darkslategray;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    bottom: 0%;
+    padding: 20px;
+}
+#support {
+    position: absolute;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    top: 2.5%;
+    right: 2%;
+}
+#support a {
+    background-color: gray;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+#support a:hover {
+    color: white;
+    background-color: rgb(8,8,8);
+}
+
+#navigate {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+}
+.menu {
+    margin: 0;
+    background-color: gray;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+
+}
+
+.menu li:hover{
+    background-color: darkgray;
+
+}
+
+.menu li:nth-last-child(2), .menu li:nth-last-child(1){
+    float: right;
+    margin-right: 10px;
+
+}
+
+#worldnews, #indianews, #regionalnews, #technology {
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin: 10px;
+}
+.news {
+    position: relative;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid green;
+    display: inline-block;
+    margin: 5px;
+}
+
+.news img {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0%;
+    width: 280px;
+    border-radius: 0 0 5px 5px;
+    transition: .5s ease;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    background-color: grey;
+}
+
+.news:hover .overlay {
+    opacity: 1;
+}
+
+.ad {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+.ad img, .ad video{
+    width: 250px;
+    height: 250px;
+}

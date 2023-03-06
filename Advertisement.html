@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Form</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        header {
+            border-radius: 5px;
+            height: auto;
+            text-align: center;
+
+        }
+        p, h1 {
+            padding: 10px;
+            margin: 0%;
+        }
+        section {
+            position: absolute;
+            top: 5%;
+            left: 25%;
+            width: 50%;
+        }
+        article {
+            background-color: white;
+            border: 1px solid steelblue;
+            border-radius: 5px;
+            margin-top: 10px;
+            min-width: 300px;
+            padding: 10px;
+        }
+        input {
+            width: 300px;
+            border: none;
+            background-color: white;
+            border-bottom: 1px solid gray;
+            height: 30px;
+        }
+        input, label, h3 {
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input:focus {
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+
+        }
+
+        header p {
+            text-align: left;
+        }
+
+        button {
+            display: block;
+            margin: 20px;
+            width: 80px;
+            height: 30px;
+            color: white;
+            font-size: 18px;
+            float: right;
+            border: none;
+            border-radius: 4px;
+            background-color: darkolivegreen;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Advertisment Form</h1>
+            <p>Read bolow insctructions before proceeding
+            <br>
+            Make sure you fill all the fields where * is provided</p>
+
+        </header>
+        <form action="">
+            <article>
+                <h3>Company Name:</h3>
+                <input type="text" name="" id="" required spellcheck="true">
+            </article>
+
+            <article>
+                <h3>Your Name:</h3>
+                <input type="text" name="" id="" required spellcheck="true">
+            </article>
+
+            <article>
+                <h3>Phone number:</h3>
+                <input type="number" name="" id="" required min="6000000000" max="9999999999">
+            </article>
+
+            <article>
+                <h2>Company Address:</h2>
+                <h3>H. No.</h3>
+                <input type="text" name="" id="" required>
+            
+                <h3>Street</h3>
+                <input type="text" name="" id="" required>
+
+                <h3>Area</h3>
+                <input type="text" name="" id="" required>
+
+                <h3>City</h3>
+                <select name="" id="">
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+
+            </article>
+
+            <article>
+                <h3>Type of Advertisement</h3>
+                <div>
+                    <input type="checkbox" name="typead" id="">
+                    <label for="">Side of article</label>
+                </div>
+                
+
+                <div>
+                <input type="checkbox" name="typead" id="">
+                <label for="">Between the article</label>
+</div>
+<div>
+                <input type="checkbox" name="typead" id="">
+                <label for="">End of the article</label>
+            </div>
+            </article>
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+    </section>
+
+
+</body>
+</html>
