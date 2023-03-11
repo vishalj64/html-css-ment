@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Account Form</title>
+    <style>
+        video {
+            position: fixed;
+        }
+        .form-container{
+            position: absolute;
+            top: 25%;
+            left: 42%;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 20px 40px;
+        }
+        input {
+            padding: 10px;
+            border: none;
+            background-color: whitesmoke;
+            width: 300px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            border-radius: 2px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input:focus {
+            outline: none;
+            color: white;
+            background-color: steelblue;
+            opacity: 0.6;
+
+        }
+        button {
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 2px;
+            height: 30px;
+            width: 80px;
+            margin: 15px;
+            padding: 5px;
+            cursor: pointer;
+            background-color: #AF66F2;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <video src="./Background.mp4" autoplay muted loop></video>
+    <div class="form-container">
+        <form id="gmail-form">
+            <h1>Create Gmail Account</h1>
+            <input type="text" placeholder="Full Name" required>
+            <br>
+            <input type="number" placeholder="Contact Number" required min="6000000000" max="9999999999">
+            <br>
+            <input type="email" placeholder="Enter email id" required>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+   </div> 
+
+</body>
+</html>
